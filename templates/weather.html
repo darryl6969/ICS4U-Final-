@@ -1,0 +1,8 @@
+<h1> Weather List</h1>
+<u1>
+    {% for condition in weather %}
+    <li>
+        {{ condition.title }}: {% if condition.completed %} (Completed) {% else %} (Not completed) {% endif %}
+    </li>
+    {% endfor %}
+</u1>
